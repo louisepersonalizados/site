@@ -1,0 +1,216 @@
+{
+  "_leia": "Este arquivo é a fonte única de preços, pesos e regras da loja. O site e o servidor leem daqui. Para mudar um preço, mude só aqui. Pesos e medidas são do kit JÁ EMBALADO para envio (kg e cm). Os marcados como provisórios precisam ser pesados e medidos.",
+  "loja": {
+    "nome": "Louise Personalizados",
+    "cep_origem": "36510000",
+    "cidade": "Rodeiro-MG",
+    "whatsapp": "5532991102463",
+    "retirada": {
+      "ativa": true,
+      "nome": "Retirada em Rodeiro-MG",
+      "descricao": "Grátis. Combino o dia e o horário com você pelo WhatsApp."
+    },
+    "facebook": "https://www.facebook.com/share/1F5tVWw1pU/",
+    "instagram": "https://www.instagram.com/louisepersonalizados.oficial/"
+  },
+  "regras": {
+    "prazo_ideal_dias": 15,
+    "prazo_minimo_dias": 7,
+    "desconto_pix_pct": 5,
+    "fidelidade": {
+      "a_cada": 3,
+      "desconto_pct": 15,
+      "explicacao": "A cada 3 compras pagas, a terceira sai com 15% de desconto nos kits. Depois o cartão recomeça."
+    },
+    "cartao": {
+      "_leia": "Taxas do Link de Pagamento InfinitePay, recebimento em 1 dia útil (infinitepay.io/taxas, nov/2026). Confira o seu plano no app. Com repassar_taxas true, o cliente paga a taxa e você recebe o preço cheio.",
+      "max_parcelas": 6,
+      "repassar_taxas": true,
+      "taxas": {
+        "1": 4.2,
+        "2": 6.09,
+        "3": 7.01,
+        "4": 7.91,
+        "5": 8.8,
+        "6": 9.67
+      }
+    }
+  },
+  "linhas": {
+    "festa": {
+      "titulo_tamanho": "Quantidade de itens",
+      "opcoes": {
+        "classico": {
+          "nome": "Clássico",
+          "tamanhos": {
+            "20": {
+              "rotulo": "20 itens",
+              "preco": 190.0,
+              "inclui": "4 pirâmide, 4 milk, 4 caixas de bala, 4 tubetes e 4 cofrinhos",
+              "peso_kg": 0.8,
+              "largura": 30,
+              "altura": 20,
+              "comprimento": 25,
+              "provisorio": true
+            },
+            "30": {
+              "rotulo": "30 itens",
+              "preco": 270.0,
+              "inclui": "6 pirâmide, 6 milk, 6 caixas de bala, 6 tubetes e 6 cofrinhos",
+              "peso_kg": 1.1,
+              "largura": 35,
+              "altura": 25,
+              "comprimento": 25,
+              "provisorio": true
+            },
+            "50": {
+              "rotulo": "50 itens",
+              "preco": 390.0,
+              "inclui": "10 pirâmide, 10 milk, 10 caixas de bala, 10 tubetes e 10 cofrinhos",
+              "peso_kg": 1.6,
+              "largura": 40,
+              "altura": 30,
+              "comprimento": 30,
+              "provisorio": true
+            }
+          }
+        },
+        "luxo": {
+          "nome": "Luxo",
+          "tamanhos": {
+            "20": {
+              "rotulo": "20 itens",
+              "preco": 295.0,
+              "inclui": "4 pirâmide e 4 milk, mais 12 peças especiais do tema",
+              "peso_kg": 1.1,
+              "largura": 35,
+              "altura": 25,
+              "comprimento": 30,
+              "provisorio": true
+            },
+            "30": {
+              "rotulo": "30 itens",
+              "preco": 435.0,
+              "inclui": "5 pirâmide e 5 milk, mais 20 peças especiais do tema",
+              "peso_kg": 1.5,
+              "largura": 40,
+              "altura": 30,
+              "comprimento": 30,
+              "provisorio": true
+            },
+            "50": {
+              "rotulo": "50 itens",
+              "preco": 690.0,
+              "inclui": "9 pirâmide e 9 milk, mais 32 peças especiais do tema",
+              "peso_kg": 2.3,
+              "largura": 45,
+              "altura": 35,
+              "comprimento": 35,
+              "provisorio": true
+            }
+          }
+        }
+      }
+    },
+    "datas": {
+      "titulo_tamanho": "",
+      "opcoes": {
+        "simples": {
+          "nome": "Simples",
+          "tamanhos": {
+            "un": {
+              "rotulo": "1 unidade",
+              "preco": 59.9,
+              "inclui": "Caixa personalizada com o nome, no tema escolhido. Vai sem conteúdo, pronta para você rechear",
+              "peso_kg": 0.35,
+              "largura": 25,
+              "altura": 15,
+              "comprimento": 20,
+              "provisorio": true
+            }
+          }
+        },
+        "luxo": {
+          "nome": "Luxo",
+          "tamanhos": {
+            "un": {
+              "rotulo": "1 unidade",
+              "preco": 89.9,
+              "inclui": "Caixa personalizada com acabamento especial e mais detalhes do tema. Vai sem conteúdo",
+              "peso_kg": 0.5,
+              "largura": 28,
+              "altura": 18,
+              "comprimento": 22,
+              "provisorio": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "kits": {
+    "natal": "datas",
+    "marinheiro": "festa",
+    "pandinha": "festa",
+    "principe": "festa",
+    "capivararosa": "festa",
+    "natal2": "datas",
+    "margarida": "festa",
+    "safaribaby": "festa",
+    "circo": "festa",
+    "doceursinho": "festa",
+    "summer": "festa",
+    "anonovo": "datas",
+    "maes": "datas",
+    "mar": "festa",
+    "gansinho": "festa",
+    "chapeuzinho": "festa",
+    "astronauta": "festa",
+    "ursinhomarrom": "festa",
+    "cerejinha": "festa",
+    "natalazul": "datas",
+    "pascoacoelhinhos": "datas",
+    "leaozinho": "festa",
+    "circorosa": "festa",
+    "futebol": "festa",
+    "pascoacesta": "datas",
+    "patinho": "festa",
+    "unicornio": "festa",
+    "pais": "datas",
+    "safari": "festa",
+    "joaninha": "festa",
+    "ovelhaverde": "festa",
+    "girassol": "festa",
+    "dolcevita": "festa",
+    "porquinhos": "festa",
+    "gatinha": "festa",
+    "construcao": "festa",
+    "namorados": "datas",
+    "borboletas": "festa",
+    "arcanoe": "festa",
+    "pascoacordeiro": "datas",
+    "dino": "festa",
+    "fazenda": "festa",
+    "fadinha": "festa",
+    "ovelharosa": "festa",
+    "paisfutebol": "datas",
+    "capivaraazul": "festa",
+    "safarirosa": "festa",
+    "abelhinha": "festa",
+    "pascoareligioso": "datas",
+    "halloween": "festa",
+    "namorados2": "datas",
+    "padrinhos": "datas"
+  },
+  "destaques": [
+    "marinheiro",
+    "natal",
+    "capivararosa",
+    "mar",
+    "borboletas",
+    "safaribaby",
+    "natalazul",
+    "anonovo"
+  ],
+  "depoimentos": []
+}
