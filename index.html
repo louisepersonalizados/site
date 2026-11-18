@@ -1164,7 +1164,7 @@ const KITS = [
   F("astronauta","Astronauta","fantasia","#1f3f9a","#f2b53a","#1f3f9a"),
   F("ursinhomarrom","Ursinho Marrom","baby","#7aa6d6","#9a6a3f","#3a5a8a"),
   F("cerejinha","Cerejinha","flores","#d4323b","#5a9a4a","#a12626"),
-  {id:"natalazul", cat:"natal", nome:"Natal Azul Boas Festas", desc:"Linha de Natal em tons de azul, para presentes e mesa de fim de ano.", foto:"natalazul", preco:"59,90", a:"#2f6fb8", b:"#c9a24a", tinta:"#1f3f7a"},
+  {id:"natalazul", oculto:true, cat:"natal", nome:"Natal Azul Boas Festas", desc:"Linha de Natal em tons de azul, para presentes e mesa de fim de ano.", foto:"natalazul", preco:"59,90", a:"#2f6fb8", b:"#c9a24a", tinta:"#1f3f7a"},
   {id:"pascoacoelhinhos", cat:"pascoa", nome:"Páscoa Coelhinhos", desc:"Caixas e embalagens de mini confeiteiro e caça aos ovos para as crianças.", foto:"pascoacoelhinhos", preco:"59,90", a:"#f08a3a", b:"#7ab0e0", tinta:"#c25a1a"},
   F("leaozinho","Leãozinho","bichinhos","#d9783a","#8ec3e6","#8a4a22"),
   F("circorosa","Circo Rosa","fantasia","#e58fa6","#f2c641","#a03a63"),
@@ -1200,6 +1200,8 @@ const KITS = [
   {id:"outro", cat:"todos", nome:"Outro tema", desc:"Personagem, tema da sua festa ou outra data: me conta qual é.", a:"#1f6fd1", b:"#5aa6f0", tinta:"#0d2f6b"}
 ];
 KITS.forEach(k=>{ if(k.cat==="festa" && !k.desc) k.desc = KIT_FESTA; });
+/* Kits com oculto:true ficam fora do site (apague o oculto:true para mostrar de novo) */
+for(let i=KITS.length-1;i>=0;i--) if(KITS[i].oculto) KITS.splice(i,1);
 const ehFesta = k => k && (k.cat==="festa" || k.id==="outro");
 
 /* ====== Estado ====== */
